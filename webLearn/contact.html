@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub | Contact</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-wrapper">
+            <div class="logo-text">Learn<span class="highlight">Hub</span></div>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="current">Contact</a></li>
+            </ul>
+            <div class="user-action">
+                <button class="btn notification-btn">
+                    <i class="fa fa-bell"></i>
+                    <span class="badge">3</span>
+                </button>
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="user-image">
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Contact Info Section -->
+    <section class="hero-section">
+        <div class="container hero-wrapper">
+            <div class="hero-content">
+                <h1 class="hero-title">Get in Touch</h1>
+                <p class="hero-subtitle">Have questions or suggestions? We'd love to hear from you. Fill out the form below or reach us directly.</p>
+                <div class="hero-stats">
+                    <div>
+                        <i class="fa fa-envelope" style="color:#2563eb; font-size:24px;"></i>
+                        <span class="stat-label">contact@learnhub.com</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone" style="color:#2563eb; font-size:24px;"></i>
+                        <span class="stat-label">+91 78877 06121</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-map-marker-alt" style="color:#2563eb; font-size:24px;"></i>
+                        <span class="stat-label">Mumbai, India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1499159058454-75067059248a" alt="Contact Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Send Us a Message</h2>
+                <p class="section-subtitle">Fill out this form and we'll get back to you as soon as possible.</p>
+            </div>
+            <form action="submit_contact.php" method="post" style="display: grid; gap: 20px; max-width: 600px; margin: auto;">
+                <input type="text" name="name" placeholder="Your Name" required class="btn" style="padding:12px; border-radius:5px; border:1px solid #ccc;">
+                <input type="email" name="email" placeholder="Your Email" required class="btn" style="padding:12px; border-radius:5px; border:1px solid #ccc;">
+                <input type="text" name="subject" placeholder="Subject" required class="btn" style="padding:12px; border-radius:5px; border:1px solid #ccc;">
+                <textarea name="message" placeholder="Your Message" required class="btn" rows="5" style="padding:12px; border-radius:5px; border:1px solid #ccc;"></textarea>
+                <button type="submit" class="btn btn-lg">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 LearnHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
